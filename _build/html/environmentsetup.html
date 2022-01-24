@@ -52,7 +52,6 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="YOLOv5" href="yolov5.html" />
-    <link rel="prev" title="Introduction" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -90,18 +89,13 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Introduction
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
    Environment Setup
   </a>
  </li>
+</ul>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="yolov5.html">
    YOLOv5
@@ -199,6 +193,29 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cloning-the-environment">
+   Cloning The Environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#using-the-environment">
+   Using The Environment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#exiting-the-environment">
+   Exiting The Environment
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -209,6 +226,32 @@
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="environment-setup">
 <h1>Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="cloning-the-environment">
+<h2>Cloning The Environment<a class="headerlink" href="#cloning-the-environment" title="Permalink to this headline">¶</a></h2>
+<p>To setup your Python environment and have all the libraries ready to go, copy the environment to any destination of your choosing with:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>cp -r /data/drone/tranch29/python_env [destination-path]
+</pre></div>
+</div>
+<p>I recommend copying it to your personal directory in the <code class="docutils literal notranslate"><span class="pre">/data/drone</span></code> project directory, but if you have a directory that you prefer, feel free to move it there.</p>
+</div>
+<div class="section" id="using-the-environment">
+<h2>Using The Environment<a class="headerlink" href="#using-the-environment" title="Permalink to this headline">¶</a></h2>
+<p>In order to start use the environment, <code class="docutils literal notranslate"><span class="pre">cd</span></code> into wherever your <code class="docutils literal notranslate"><span class="pre">python_env</span></code> is located. Then, run:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>source python_env/bin/activate
+</pre></div>
+</div>
+<p>Now, on the left-side of your terminal input, you should see a <code class="docutils literal notranslate"><span class="pre">(python_env)</span></code> tag. Whenever you use the <code class="docutils literal notranslate"><span class="pre">python</span></code> command, it will use this environment and all of its installed libraries.</p>
+</div>
+<div class="section" id="exiting-the-environment">
+<h2>Exiting The Environment<a class="headerlink" href="#exiting-the-environment" title="Permalink to this headline">¶</a></h2>
+<p>In order to exit the environment, simply run:</p>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>deactivate
+</pre></div>
+</div>
+<p>Now, the <code class="docutils literal notranslate"><span class="pre">python</span></code> command will execute whatever the default Python binary is.</p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -235,14 +278,7 @@
               
         
             <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Introduction</p>
-        </div>
-    </a>
+<div class='prev-next-area'>
     <a class='right-next' id="next-link" href="yolov5.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
